@@ -19,6 +19,7 @@ function connectToDb () {
 function fetchAllTasks ( $pdo ) {
 
     $stmt = $pdo->prepare('SELECT * FROM tasks;');
+    
     $stmt->execute();
     
     return $stmt->fetchAll(PDO::FETCH_CLASS, 'Task');

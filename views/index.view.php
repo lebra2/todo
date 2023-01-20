@@ -6,15 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
+<body style="background-color: beige;">
     <nav>
-        <ul>
+        <ul style="display: flex; gap: 20px; list-style: none; height: 40px; justify-content: center; align-items: center;">
             <li><a href="about">About</a></li>
             <li><a href="contact">Contact</a></li>
             <li><a href="about/culture">About Culture</a></li>
         </ul>
     </nav>
-    <ul>
+    <ul style="display: flex; flex-direction: column; list-style: none;">
         <?php foreach ( $tasks as $task ): ?>
             <li>
 

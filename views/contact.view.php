@@ -7,6 +7,7 @@
     <title>Document</title>
 </head>
 <body style="background-color: beige;">
+    <?php require_once('partials/nav.php'); ?>
     <h1>Contact</h1>
     <div style="display: flex; gap: 20px; justify-content: center;">
     <?php foreach ( $contacts as $contact ): ?>

@@ -7,6 +7,7 @@
     <title>About Culture</title>
 </head>
 <body>
+<?php require_once('partials/nav.php'); ?>
     
     <h1>About Culture</h1>
 </body>

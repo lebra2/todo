@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body style="background-color: beige;">
-    <?php require_once('partials/nav.php'); ?>
+<body>
+    <?php require_once('partials/head.php'); ?>
     <h1>Contact</h1>
     <div style="display: flex; gap: 20px; justify-content: center;">
     <?php foreach ( $contacts as $contact ): ?>
@@ -19,5 +19,6 @@
 
             <?php endforeach; ?>
     </div>
+    <?php require_once('partials/footer.php'); ?>
 </body>
 </html>

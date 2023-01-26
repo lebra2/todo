@@ -7,7 +7,7 @@
     <title>Document</title>
 </head>
 <body style="">
-    <?php require_once('partials/nav.php'); ?>
+    <?php require_once('partials/head.php'); ?>
     <ul style="display: flex; flex-direction: column; list-style: none;">
         <?php foreach ( $tasks as $task ): ?>
             <li>
@@ -25,5 +25,9 @@
             </li>
         <?php endforeach; ?>
     </ul>
+    <form action="GET">
+    
+    </form>
+    <?php require_once('partials/footer.php'); ?>
 </body>
 </html>

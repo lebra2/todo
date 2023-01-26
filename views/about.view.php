@@ -7,8 +7,9 @@
     <title>About page</title>
 </head>
 <body>
-<?php require_once('partials/nav.php'); ?>
+<?php require_once('partials/head.php'); ?>
     
     <h1>About us</h1>
+    <?php require_once('partials/footer.php'); ?>
 </body>
 </html>

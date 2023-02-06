@@ -1,6 +1,6 @@
 <?php
 
-$db = require_once('core/bootstrap.php');
+require_once('core/bootstrap.php');
 
 require_once Router::load('routes.php')
-    ->direct(Request::uri());
+    ->direct(Request::uri(), Request::method());

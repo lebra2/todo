@@ -1,16 +1,14 @@
 <?php
 
-$names = ['Mina', 'makupakub', 'nimeke', 'ema', 'abraham', 'teletupsu', 'kartul'];
+$names = ['Sergei', 'Dimitri', 'Vassiili', 'Masha', 'Andrei', 'Vanja', 'Oleg'];
 
-$lessthanfive = array_filter($names, function($name){
+$sortbylength = array_filter($names, function($name){
     return strlen($name) <= 5;
 });
 
-function upper($element){
+$capslock = array_map(function ($element){
     return strtoupper($element);
-}
+}, $names);
 
-$caps = array_map('upper', $names);
-
-var_dump($lessthanfive);
-var_dump($caps);
+var_dump($sortbylength);
+var_dump($capslock);
